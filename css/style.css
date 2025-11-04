@@ -1,0 +1,96 @@
+/* Importa uma fonte moderna do Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Define a paleta de cores e a fonte principal */
+:root {
+    --brand-color: #0d6efd; /* Azul primary do Bootstrap para destaques */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px; /* Adiciona padding no topo para compensar o navbar fixo */
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 3px solid var(--brand-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link.active {
+    color: var(--brand-color) !important; /* !important para garantir a cor ativa */
+    font-weight: 600;
+}
+
+/* Seção "Hero" (Página Home) */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('httpssa://images.unsplash.com/photo-1511886929065-b918b84e460a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzOTAwY3wxMHwxfHNlYXJjaHwxfHxhY3Rpb24lMjBzb2NjZXIlMjBwbGF5ZXI%3D&ixlib=rb-4.0.3&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Seção "Features" (Página Home) */
+.feature-icon {
+    font-size: 3rem;
+    color: var(--brand-color);
+}
+
+/* Página de Produtos */
+.product-card {
+    transition: all 0.3s ease;
+    border: 1px solid #444; /* Borda sutil no tema escuro */
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-color: var(--brand-color);
+}
+
+.product-card .card-img-top {
+    background-color: #555;
+}
+
+.product-card .price {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--brand-color);
+}
+
+/* Footer */
+.footer {
+    border-top: 1px solid #333;
+}
+
+/* Estilo para o mapa de contato (iframe) */
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}
